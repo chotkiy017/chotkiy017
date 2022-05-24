@@ -1,7 +1,7 @@
 /* Main styles */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:800);
 .iop{
-  height:200px;
+  height:500px;
 }
 .text {
   fill: url(#p-stars);
