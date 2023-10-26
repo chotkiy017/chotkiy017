@@ -1,475 +1,587 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Erasmus</title>
-    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/flexslider.css" rel="stylesheet" >
-    <link href="css/styles.css" rel="stylesheet">
-    <link href="css/erasmus.css" rel="stylesheet">
-    <link href="css/queries.css" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-        <![endif]-->
-      </head>
-      <body id="top">
-        <header id="home">
-          <nav>
-            <div class="container-fluid">
-              <div class="row"><svg viewBox="0 0 600 10  ">
 
-  
-                <div class="col-md-8 col-md-offset-2 col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
-                  <nav class="pull">
-                    <ul class="top-nav">
-                      <li><a href="#intro">Introduction <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#features">Features <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#responsive">Responsive Design <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#portfolio">Some images<span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#team">Team <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                      <li><a href="#contact">Get in Touch <span class="indicator"><i class="fa fa-angle-right"></i></span></a></li>
-                    </ul>
-                  </nav>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mentor Education Bootstrap Theme</title>
+  <meta name="description" content="Free Bootstrap Theme by BootstrapMade.com">
+  <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
+
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans|Candal|Alegreya+Sans">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/imagehover.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- =======================================================
+    Theme Name: Mentor
+    Theme URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body>
+  <!--Navigation bar-->
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="index.html">Men<span>tor</span></a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#feature">Features</a></li>
+          <li><a href="#organisations">Organisations</a></li>
+          <li><a href="#courses">Courses</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#" data-target="#login" data-toggle="modal">Sign in</a></li>
+          <li class="btn-trial"><a href="#footer">Free Trail</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--/ Navigation bar-->
+  <!--Modal box-->
+  <div class="modal fade" id="login" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+      <!-- Modal content no 1-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title text-center form-title">Login</h4>
+        </div>
+        <div class="modal-body padtrbl">
+
+          <div class="login-box-body">
+            <p class="login-box-msg">Sign in to start your session</p>
+            <div class="form-group">
+              <form name="" id="loginForm">
+                <div class="form-group has-feedback">
+                  <!----- username -------------->
+                  <input class="form-control" placeholder="Username" id="loginid" type="text" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: red;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginid"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-user form-control-feedback"></span>
                 </div>
-              </div>
-            </div>
-          </nav>
-          <section class="hero" id="hero">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12 text-right navicon">
-                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                <div class="form-group has-feedback">
+                  <!----- password -------------->
+                  <input class="form-control" placeholder="Password" id="loginpsw" type="password" autocomplete="off" />
+                  <span style="display:none;font-weight:bold; position:absolute;color: grey;position: absolute;padding:4px;font-size: 11px;background-color:rgba(128, 128, 128, 0.26);z-index: 17;  right: 27px; top: 5px;" id="span_loginpsw"></span>
+                  <!---Alredy exists  ! -->
+                  <span class="glyphicon glyphicon-lock form-control-feedback"></span>
                 </div>
-              </div>
-              <div class="row">
-                <div class="col-md-8 col-md-offset-2 text-center inner">
-                  <h1 class="animated fadeInDown"><svg viewBox="0 0 600 300">
-
-  <svg viewBox="0 0 600 300">
-
-  <!-- Pattern -->
-  <pattern
-           id="p-stars"
-           width="70"
-           height="70"
-           viewBox="0 0 120 120"
-           patternUnits="userSpaceOnUse"
-           >
-
-    <g class="g-stars">
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549 "
-               transform="
-                          scale(.9,.9)"        
-               ></polygon>
-
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549"
-               transform="
-                          translate(30,30)
-                          scale(.9,.9)
-                          " 
-               ></polygon>
-
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549"
-               transform="
-                          translate(90,30)
-                          scale(.9,.9)
-                          " 
-               ></polygon>
-
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549"
-               transform="
-                          translate(0,60)
-                          scale(.9,.9)" 
-               ></polygon>
-
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549 "
-               transform="
-                          translate(60,0)
-                          scale(.9,.9)  
-                          " 
-               ></polygon>
-
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549"
-               transform="
-                          translate(60,60)
-                          scale(.9,.9)  
-                          " 
-               ></polygon>
-
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549"
-               transform="
-                          translate(90,90)
-                          scale(.9,.9)
-                          " 
-               ></polygon>
-
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549"
-               transform="
-                          translate(30,90)
-                          scale(.9,.9)
-                          " 
-               ></polygon>
-
-
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549"
-               transform="
-                          translate(120,60)
-                          scale(.9,.9)
-                          " 
-               ></polygon>
-
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549"
-               transform="
-                          translate(60,120)
-                          scale(.9,.9)
-                          " 
-               ></polygon>
-
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549"
-               transform="
-                          translate(0,120)
-                          scale(.9,.9)
-                          " 
-               ></polygon>
-
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549"
-               transform="
-                          translate(-30,90)
-                          scale(.9,.9)
-                          " 
-               ></polygon>
-
-      <!-- Hack to make shapes full  -->
-      <polygon></polygon>
-      <polygon></polygon>
-      <polygon></polygon>
-
-      <polygon
-               points="15 22.5 6.18322122 27.1352549 7.86707613 17.3176275 0.734152256 10.3647451 10.5916106 8.93237254 15 0 19.4083894 8.93237254 29.2658477 10.3647451 22.1329239 17.3176275 23.8167788 27.1352549"
-               transform="
-                          translate(120,0)
-                          scale(.9,.9)
-                          " 
-               ></polygon>
-
-    </g>
-
-  </pattern>
-
-  <!-- Text -->
-  <text text-anchor="middle"
-        x="50%"
-        y="50%"
-        dy=".35em"
-        class="text"
-        >
-    ERASMUS +
-  </text>
-
-</svg></h1>
-                  <div class="ghi animated fadeInUp delay-05s ">Made by <em>Pavel Izrailskiy</em></div>
-                </div>
-              </div>
-               
-            </div>
-          </section>
-        </header>
-        <section  class="intro text-center section-padding" id="intro">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2 wp1">
-                <h1 class="arrow">About me: </h1>
-                <p>I really like traveling, making new friends.
-I really wanted to participate in the Erasmus project because I saw it as an opportunity to make new friends and get to know cultures different from mine.</p>
-              </div>
-            </div>
-          </div> 
-          <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-               <br>
-        </section>
-          
-           
-            
-        <section class="features text-center section-padding" id="features">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-12">
-                <h1 class="arrow">ACTIVITIES</h1>
-                <div class="features-wrapper">
-                  <div class="col-md-4 wp2">
-                    <div class="icon">
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div class="checkbox icheck">
+                      <label>
+                                <input type="checkbox" id="loginrem" > Remember Me
+                              </label>
                     </div>
-                    <h2>Debate</h2>
-                    <p>In our Erasmus project we had a debate about a film that we watched before travelling to Denmark. The film was interesting, while the debate was a bit difficult but in my opinion finally we all enjoyed the debate activity. </p>
                   </div>
-                  <div class="col-md-4 wp2 delay-05s">
-                    <div class="icon">
-                      <i class="fa fa-code shadow"></i>
-                    </div>
-                    <h2>Human rights speech</h2>
-                    <p>The director of the school came to our class and we had been listening why human rights are very important.</p>
-                  </div>
-                  <div class="col-md-4 wp2 delay-1s">
-                    <div class="icon">
-                      <i class="fa fa-heart shadow"></i>
-                    </div>
-                    <h2>Photo Safari</h2>
-                    <p>When we were in Denmark danish students prepared a photo safari that consists in that we had to be walking in the town and searching some specific places. </p>
-                  </div>
-                  <div class="clearfix"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="text-center" id="responsive">
-          <div class="container-fluid nopadding responsive-services">
-            <div class="wrapper">
-              <div class="iphone">
-                <img class="iop" height="400" src="img/f1.jpg"></img>
-              </div>
-              
-              <div class="fluid-white"></div>
-            </div>
-            <div class="container designs">
-              <div class="row">
-                <div class="col-md-5 col-md-offset-7">
-                  <div id="servicesSlider">
-                    <ul class="slides">
-                      <li>
-                        <h1 class="arrow">Blinded by the Light</h1>
-                        <p>In “Blinded by the Light,” Javed, a Pakistani British teenager living in a London
-suburb called Luton in 1987, discovers the music of Bruce Springsteen thanks to his
-future friend Roops, and this music makes him reconsider all his future plans, to start
-thinking different about his writings and love himself as he is. The lyrics swirling
-around him, in his soul, he’s more than just a born-again Bruce fan. Bruce’s music
-becomes his obsession and identity, his runaway American dream that later came
-true after he won in a competition thanks to her teacher Ms Clay that generally
-inspired him to continue writing and believe in himself. He just about syncs his
-heartbeat to that sound and it gives him the courage to do things he wouldn’t have
-dared otherwise: like, for instance, asking Eliza , a girl in his literature class, out on a
-date and later even kiss her.
-In my opinion its a very good film to point out that all of us have the same rights to
-live in this world and nobody can take that away from us. At the same time the film
-shows that everything can come true, the only thing you need is to believe in yourself
-
-and fight for your dreams.
-
-Made by Pavel Izrailskiy</p>
-                      </li>
-                      <li>
-                        <h1 class="arrow">Blinded by the Light</h1>
-                        <p>In “Blinded by the Light,” Javed, a Pakistani British teenager living in a London
-suburb called Luton in 1987, discovers the music of Bruce Springsteen thanks to his
-future friend Roops, and this music makes him reconsider all his future plans, to start
-thinking different about his writings and love himself as he is. The lyrics swirling
-around him, in his soul, he’s more than just a born-again Bruce fan. Bruce’s music
-becomes his obsession and identity, his runaway American dream that later came
-true after he won in a competition thanks to her teacher Ms Clay that generally
-inspired him to continue writing and believe in himself. He just about syncs his
-heartbeat to that sound and it gives him the courage to do things he wouldn’t have
-dared otherwise: like, for instance, asking Eliza , a girl in his literature class, out on a
-date and later even kiss her.
-In my opinion its a very good film to point out that all of us have the same rights to
-live in this world and nobody can take that away from us. At the same time the film
-shows that everything can come true, the only thing you need is to believe in yourself
-
-and fight for your dreams.
-
-Made by Pavel Izrailskiy</p>
-                      </li>
-                    </ul>
+                  <div class="col-xs-12">
+                    <button type="button" class="btn btn-green btn-block btn-flat" onclick="userlogin()">Sign In</button>
                   </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
-        </section>
-        <section class="swag text-center">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2">
-                <h1>Some photos</h1>
-                <a href="#portfolio" class="down-arrow-btn"><i class="fa fa-chevron-down"></i></a>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="portfolio text-center section-padding" id="portfolio">
-          <div class="container">
-            <div class="row">
-              <div id="portfolioSlider">
-                <ul class="slides">
-                  
-                  <li>
-                    <div class="col-md-4 wp4">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/a4.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="col-md-4 wp4 delay-05s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/a5.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="col-md-4 wp4 delay-1s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/a6.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </li>
-                  <li>
-                    <div class="col-md-4 wp4">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/a3.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-4 wp4 delay-05s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/a10.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="col-md-4 wp4 delay-1s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/a11.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    </div>
-                  </li>
-                  <li>
-                    <div class="col-md-4 wp4">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/a12.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                     
-                    </div>
-                    <div class="col-md-4 wp4 delay-05s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/a8.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    </div>
-                    <div class="col-md-4 wp4 delay-1s">
-                      <div class="overlay-effect effects clearfix">
-                        <div class="img">
-                          <img src="img/a3.jpg" alt="Portfolio Item">
-                          <div class="overlay">
-                            <a href="#" class="expand"><i class="fa fa-search"></i><br>View More</a>
-                            <a class="close-overlay hidden">x</a>
-                          </div>
-                        </div>
-                      </div>
-                      
-                    </div>
-                    
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </section>
-        
-        <footer>
-          <div class="container">
-            <div class="row">
-              
-            </div>
-          </div>
-        </footer>
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/waypoints.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/scripts.js"></script>
-        <script src="js/jquery.flexslider.js"></script>
-        <script src="js/modernizr.js"></script>
+        </div>
+      </div>
 
-      </body>
-    </html>
+    </div>
+  </div>
+  <!--/ Modal box-->
+  <!--Banner-->
+  <div class="banner">
+    <div class="bg-color">
+      <div class="container">
+        <div class="row">
+          <div class="banner-text text-center">
+            <div class="text-border">
+              <h2 class="text-dec">Trust & Quality</h2>
+            </div>
+            <div class="intro-para text-center quote">
+              <p class="big-text">Learning Today . . . Leading Tomorrow.</p>
+              <p class="small-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium enim repellat sapiente quos architecto<br>Laudantium enim repellat sapiente quos architecto</p>
+              <a href="#footer" class="btn get-quote">GET A QUOTE</a>
+            </div>
+            <a href="#feature" class="mouse-hover">
+              <div class="mouse"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Banner-->
+  <!--Feature-->
+  <section id="feature" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Features</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+          <hr class="bottom-line">
+        </div>
+        <div class="feature-info">
+          <div class="fea">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h4>Latest Technologies</h4>
+                <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+              </div>
+              <div class="fea-img pull-left">
+                <i class="fa fa-css3"></i>
+              </div>
+            </div>
+          </div>
+          <div class="fea">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h4>Toons Background</h4>
+                <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+              </div>
+              <div class="fea-img pull-left">
+                <i class="fa fa-drupal"></i>
+              </div>
+            </div>
+          </div>
+          <div class="fea">
+            <div class="col-md-4">
+              <div class="heading pull-right">
+                <h4>Award Winning Design</h4>
+                <p>Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+              </div>
+              <div class="fea-img pull-left">
+                <i class="fa fa-trophy"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ feature-->
+  <!--Organisations-->
+  <section id="organisations" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="orga-stru">
+              <h3>65%</h3>
+              <p>Say NO!!</p>
+              <i class="fa fa-male"></i>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="orga-stru">
+              <h3>20%</h3>
+              <p>Says Yes!!</p>
+              <i class="fa fa-male"></i>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+            <div class="orga-stru">
+              <h3>15%</h3>
+              <p>Can't Say!!</p>
+              <i class="fa fa-male"></i>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="detail-info">
+            <hgroup>
+              <h3 class="det-txt"> Is inclusive quality education affordable?</h3>
+              <h4 class="sm-txt">(Revised and Updated for 2016)</h4>
+            </hgroup>
+            <p class="det-p">Donec et lectus bibendum dolor dictum auctor in ac erat. Vestibulum egestas sollicitudin metus non urna in eros tincidunt convallis id id nisi in interdum.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Organisations-->
+  <!--Cta-->
+  <section id="cta-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2 class="text-center">Subscribe Now</h2>
+          <p class="cta-2-txt">Sign up for our free weekly software design courses, we’ll send them right to your inbox.</p>
+          <div class="cta-2-form text-center">
+            <form action="#" method="post" id="workshop-newsletter-form">
+              <input name="" placeholder="Enter Your Email Address" type="email">
+              <input class="cta-2-form-submit-btn" value="Subscribe" type="submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Cta-->
+  <!--work-shop-->
+  <section id="work-shop" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Upcoming Workshop</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+          <hr class="bottom-line">
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <i class="fa fa-html5 color-green"></i>
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Mentor HTML5 Workshop</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <i class="fa fa-css3 color-green"></i>
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Mentor CSS3 Workshop</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+          <div class="service-box text-center">
+            <div class="icon-box">
+              <i class="fa fa-joomla color-green"></i>
+            </div>
+            <div class="icon-text">
+              <h4 class="ser-text">Mentor Joomla Workshop</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ work-shop-->
+  <!--Faculity member-->
+  <section id="faculity-member" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Meet Our Faculty Member</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+          <hr class="bottom-line">
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="pm-staff-profile-container">
+            <div class="pm-staff-profile-image-wrapper text-center">
+              <div class="pm-staff-profile-image">
+                <img src="img/mentor.jpg" alt="" class="img-thumbnail img-circle" />
+              </div>
+            </div>
+            <div class="pm-staff-profile-details text-center">
+              <p class="pm-staff-profile-name">Bryan Johnson</p>
+              <p class="pm-staff-profile-title">Lead Software Engineer</p>
+
+              <p class="pm-staff-profile-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="pm-staff-profile-container">
+            <div class="pm-staff-profile-image-wrapper text-center">
+              <div class="pm-staff-profile-image">
+                <img src="img/mentor.jpg" alt="" class="img-thumbnail img-circle" />
+              </div>
+            </div>
+            <div class="pm-staff-profile-details text-center">
+              <p class="pm-staff-profile-name">Bryan Johnson</p>
+              <p class="pm-staff-profile-title">Lead Software Engineer</p>
+
+              <p class="pm-staff-profile-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt. </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-4">
+          <div class="pm-staff-profile-container">
+            <div class="pm-staff-profile-image-wrapper text-center">
+              <div class="pm-staff-profile-image">
+                <img src="img/mentor.jpg" alt="" class="img-thumbnail img-circle" />
+              </div>
+            </div>
+            <div class="pm-staff-profile-details text-center">
+              <p class="pm-staff-profile-name">Bryan Johnson</p>
+              <p class="pm-staff-profile-title">Lead Software Engineer</p>
+
+              <p class="pm-staff-profile-bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et placerat dui. In posuere metus et elit placerat tristique. Maecenas eu est in sem ullamcorper tincidunt. </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Faculity member-->
+  <!--Testimonial-->
+  <section id="testimonial" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2 class="white">See What Our Customer Are Saying?</h2>
+          <p class="white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+          <hr class="bottom-line bg-white">
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="text-comment">
+            <p class="text-par">"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, nec sagittis sem"</p>
+            <p class="text-name">Abraham Doe - Creative Dırector</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6">
+          <div class="text-comment">
+            <p class="text-par">"Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, nec sagittis sem"</p>
+            <p class="text-name">Abraham Doe - Creative Dırector</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Testimonial-->
+  <!--Courses-->
+  <section id="courses" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Courses</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+          <hr class="bottom-line">
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/course01.jpg" class="img-responsive">
+            <figcaption>
+              <h3>Course Name</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/course02.jpg" class="img-responsive">
+            <figcaption>
+              <h3>Course Name</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/course03.jpg" class="img-responsive">
+            <figcaption>
+              <h3>Course Name</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/course04.jpg" class="img-responsive">
+            <figcaption>
+              <h3>Course Name</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/course05.jpg" class="img-responsive">
+            <figcaption>
+              <h3>Course Name</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+        <div class="col-md-4 col-sm-6 padleft-right">
+          <figure class="imghvr-fold-up">
+            <img src="img/course06.jpg" class="img-responsive">
+            <figcaption>
+              <h3>Course Name</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam atque, nostrum veniam consequatur libero fugiat, similique quis.</p>
+            </figcaption>
+            <a href="#"></a>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Courses-->
+  <!--Pricing-->
+  <section id="pricing" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Our Pricing</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+          <hr class="bottom-line">
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="price-table">
+            <!-- Plan  -->
+            <div class="pricing-head">
+              <h4>Monthly Plan</h4>
+              <span class="fa fa-usd curency"></span> <span class="amount">200</span>
+            </div>
+
+            <!-- Plean Detail -->
+            <div class="price-in mart-15">
+              <a href="#" class="btn btn-bg green btn-block">PURCHACE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="price-table">
+            <!-- Plan  -->
+            <div class="pricing-head">
+              <h4>Quarterly Plan</h4>
+              <span class="fa fa-usd curency"></span> <span class="amount">800</span>
+            </div>
+
+            <!-- Plean Detail -->
+            <div class="price-in mart-15">
+              <a href="#" class="btn btn-bg yellow btn-block">PURCHACE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-4">
+          <div class="price-table">
+            <!-- Plan  -->
+            <div class="pricing-head">
+              <h4>Year Plan</h4>
+              <span class="fa fa-usd curency"></span> <span class="amount">1200</span>
+            </div>
+
+            <!-- Plean Detail -->
+            <div class="price-in mart-15">
+              <a href="#" class="btn btn-bg red btn-block">PURCHACE</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--/ Pricing-->
+  <!--Contact-->
+  <section id="contact" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="header-section text-center">
+          <h2>Contact Us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem nesciunt vitae,<br> maiores, magni dolorum aliquam.</p>
+          <hr class="bottom-line">
+        </div>
+        <div id="sendmessage">Your message has been sent. Thank you!</div>
+        <div id="errormessage"></div>
+        <form action="" method="post" role="form" class="contactForm">
+          <div class="col-md-6 col-sm-6 col-xs-12 left">
+            <div class="form-group">
+              <input type="text" name="name" class="form-control form" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+              <div class="validation"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validation"></div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6 col-xs-12 right">
+            <div class="form-group">
+              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validation"></div>
+            </div>
+          </div>
+
+          <div class="col-xs-12">
+            <!-- Button -->
+            <button type="submit" id="submit" name="submit" class="form contact-form-button light-form-button oswald light">SEND EMAIL</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+  <!--/ Contact-->
+  <!--Footer-->
+  <footer id="footer" class="footer">
+    <div class="container text-center">
+
+      <h3>Start Your Free Trial Now!</h3>
+
+      <form class="mc-trial row">
+        <div class="form-group col-md-3 col-md-offset-2 col-sm-4">
+          <div class=" controls">
+            <input name="name" placeholder="Enter Your Name" class="form-control" type="text">
+          </div>
+        </div>
+        <!-- End email input -->
+        <div class="form-group col-md-3 col-sm-4">
+          <div class=" controls">
+            <input name="EMAIL" placeholder="Enter Your email" class="form-control" type="email">
+          </div>
+        </div>
+        <!-- End email input -->
+        <div class="col-md-2 col-sm-4">
+          <p>
+            <button name="submit" type="submit" class="btn btn-block btn-submit">
+            Submit <i class="fa fa-arrow-right"></i></button>
+          </p>
+        </div>
+      </form>
+      <!-- End newsletter-form -->
+      <ul class="social-links">
+        <li><a href="#link"><i class="fa fa-twitter fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-facebook fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-google-plus fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-dribbble fa-fw"></i></a></li>
+        <li><a href="#link"><i class="fa fa-linkedin fa-fw"></i></a></li>
+      </ul>
+      ©2016 Mentor Theme. All rights reserved
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Mentor
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade.com</a>
+      </div>
+    </div>
+  </footer>
+  <!--/ Footer-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
+
+</html>
